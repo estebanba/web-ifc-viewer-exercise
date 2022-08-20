@@ -1,0 +1,22 @@
+{
+  "name": "web-ifc-three-exercise",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "build": "rollup -c",
+    "update-ifcjs": "npm i web-ifc-three@latest && npm i && copy-wasm",
+    "copy-wasm": "cpy node_modules/web-ifc/web-ifc.wasm . && cpy node_modules/web-ifc/web-ifc-mt.wasm ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@rollup/plugin-node-resolve": "^13.3.0",
+    "rollup": "^2.78.0",
+    "three": "^0.135.0",
+    "three-mesh-bvh": "^0.5.15",
+    "web-ifc-three": "^0.0.119",
+    "web-ifc-viewer": "^1.0.209"
+  }
+}
